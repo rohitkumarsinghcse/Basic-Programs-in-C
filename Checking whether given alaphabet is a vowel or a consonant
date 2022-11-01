@@ -1,0 +1,31 @@
+/*C program to verify given character is a vowel or not*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  char c;
+  clrscr();
+  printf("Enter a character:");
+  scanf("%c",&c);
+  switch(c)
+  {
+    case 'a':
+    case 'A':  printf("A is an vowel");
+	       break;
+    case 'e':
+    case 'E':  printf("E is an vowel");
+	       break;
+    case 'i':
+    case 'I':  printf("I is an vowel");
+	       break;
+    case 'o':
+    case 'O':  printf("O is an vowel");
+	       break;
+    case 'u':
+    case 'U':  printf("U is an vowel");
+	       break;
+   default:  printf("It is a consonant");
+		  break;
+ }
+  getch();
+}

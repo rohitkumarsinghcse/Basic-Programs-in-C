@@ -1,0 +1,13 @@
+/*Addition of a integer number  and a double number*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int num1;
+ double num2;
+ clrscr();
+ printf("Enter the numbers to be added\n");
+ scanf("%d %lf",&num1,&num2);
+ printf("Sum of the numbers: %lf",num1+num2);
+ getch();
+}

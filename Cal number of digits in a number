@@ -1,0 +1,17 @@
+/* Calculation of no of digits in a number*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int n,count=0;
+ clrscr();
+ printf("Enter the number:");
+ scanf("%d",&n);
+ while(n!=0)
+ {
+  n=n/10;
+  count++;
+ }
+ printf("The no of digits in given number: %d",count);
+ getch();
+}

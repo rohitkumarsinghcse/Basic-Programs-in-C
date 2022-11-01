@@ -1,0 +1,19 @@
+/*Biggest of two numbers when two numbers are distinct*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a,b;
+ clrscr();
+ printf("Enter a and b values:");
+ scanf("%d %d",&a,&b);
+ if(a>b)
+ {
+  printf("Biggest number:%d",a);
+ }
+ else
+ {
+ printf("Biggest number:%d",b);
+ }
+ getch();
+}

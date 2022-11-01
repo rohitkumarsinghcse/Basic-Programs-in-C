@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int y;
+  clrscr();
+  printf("enter year:");
+  scanf("%d",&y);
+  if(y==1918)
+    printf("26");
+
+  else if((y>=1700)&&(y<=1917))
+   {
+      if(y%4==0)
+	printf("12");
+      else
+	printf("13");
+   }
+  else if((y>=1919)&&(y<=2700))
+  {
+      if((y%400==0)||((y%4==0)&&(y%100!=0)))
+	 printf("12");
+      else
+	 printf("13");
+  }
+  else
+    printf("Not exit");
+
+  getch();
+}

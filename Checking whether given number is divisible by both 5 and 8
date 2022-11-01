@@ -1,0 +1,17 @@
+/*Finding whether given number is diviseble by both 5 and 8*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int n;
+  clrscr();
+  printf("Enter a integer number:");
+  scanf("%d",&n);
+  if((n%5==0)&&(n%8==0))
+    printf("%d is divisible by both 5 and 8.",n);
+
+  else
+    printf("%d is not divisible by both 5 and 8 at a time.",n);
+
+  getch();
+}

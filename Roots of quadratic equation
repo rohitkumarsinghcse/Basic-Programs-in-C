@@ -1,0 +1,33 @@
+/*To find roots when coffecients of equation are given*/
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+ void main()
+{
+  float a,b,c,res1,res2,res3;
+  clrscr();
+  printf("Enter the coefficient's of expression:");
+  scanf("%f%f%f",&a,&b,&c);
+  res1= ((-b)+(sqrt((b*b)-(4*a*c))))/2*a;
+  res2= ((-b)-(sqrt((b*b)-(4*a*c))))/2*a;
+  res3= (-b)/2*a;
+  if(((b*b)-(4*a*c))==0)
+    {
+      printf("Roots are real and equal\n");
+      printf("Roots are: %.2f %.2f\n",res3);
+    }
+  else if((b*b)-(4*a*c)>0)
+   {
+      printf("Roots are real and distinct\n");
+      printf("Roots are:  %.2f %.2f",res1,res2);
+   }
+  else
+  {
+     printf("Roots are imaginary\n");
+     printf("Root1:  %f+i%f",res3,res1);
+     printf("Root2:  %f-i%f",res3,res1);
+  }
+  getch();
+}
+
+

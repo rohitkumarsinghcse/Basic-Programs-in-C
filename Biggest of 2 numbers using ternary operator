@@ -1,0 +1,13 @@
+/*Biggest of two numbers using ternary operator*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a,b,big;
+ clrscr();
+ printf("Enter two integer values:");
+ scanf("%d %d",&a,&b);
+ big=(a>b)?a:b;
+ printf("Biggest number: %d",big);
+ getch();
+}

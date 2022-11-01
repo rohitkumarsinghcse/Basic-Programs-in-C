@@ -1,0 +1,12 @@
+/*Basic structure of c*/
+#include<stdio.h>      //header files
+#include<conio.h>   
+void main
+{
+   int a;            
+   clrscr();
+   printf("Enter a value :");          
+   scanf("%d",&a);
+   printf("a value is :");   
+   getch();  
+}

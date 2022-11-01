@@ -1,0 +1,21 @@
+/*Determine whether given number is positive ,negative or zero*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int n;
+  clrscr();
+  printf("Enter a number:");
+  scanf("%d",&n);
+  if(n==0)
+  printf("Given number is zero");
+  else
+  {
+     (n>0)?printf("Given number is positive"):printf("Given number is negative");
+
+  }
+
+
+  getch();
+
+}
